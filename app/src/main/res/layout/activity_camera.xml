@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_alignParentEnd="true" >
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/frame_main" >
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/frame_camera">
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/frame_game"></FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_crosshair"
+            android:layout_gravity="center"
+            android:src="@drawable/img_crosshair" />
+
+        <Button
+            android:layout_width="92dp"
+            android:layout_height="95dp"
+            android:text="Shoot!"
+            android:id="@+id/btn_shoot"
+            android:layout_gravity="right|bottom"
+            android:enabled="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_sound"
+            android:layout_gravity="left|top" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="&lt;score>"
+            android:id="@+id/txt_score"
+            android:layout_gravity="left|bottom"
+            android:visibility="visible"
+            android:textColor="#ffffffff"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="&lt;left>"
+            android:id="@+id/txt_acc"
+            android:layout_gravity="left|bottom"
+            android:visibility="visible"
+            android:textColor="#ffffffff"
+            android:textSize="20dp"
+            android:paddingBottom="35dp" />
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="&lt;timer>"
+                android:id="@+id/txt_timer"
+                android:layout_gravity="center_horizontal|top"
+                android:visibility="visible"
+            android:textColor="#ffffffff"
+            android:textSize="30dp" />
+
+    </FrameLayout>
+
+</RelativeLayout>
